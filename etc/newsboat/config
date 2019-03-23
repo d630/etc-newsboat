@@ -1,0 +1,113 @@
+#always-dowload
+always-display-description yes
+article-sort-order date-asc
+articlelist-format "%f %4i %D  %L  %?T?|%-17T|  ?%t"
+auto-reload no
+bookmark-autopilot no
+bookmark-cmd "~/bin/taskum--add"
+bookmark-interactive no
+browser "daemonize x-web-browser %u"
+cache-file "~/etc/newsboat/newsboat_cache.db"
+cleanup-on-quit yes
+confirm-exit no
+cookie-cache "~/etc/newsboat/newsboat_cookies.txt"
+datetime-format "%Y-%m-%d"
+delete-read-articles-on-quit no
+display-article-progress yes
+download-full-page no
+download-retries 2
+download-timeout 30
+error-log "~/var/log/newsboat_error.log"
+#external-url-viewer
+feed-sort-order none
+#feedhq*
+feedlist-format "%S %n %4i %11u %T %t"
+goto-first-unread no
+goto-next-feed no
+history-limit 300
+html-renderer internal
+http-auth-method any
+ignore-mode download
+#inoreader*
+keep-articles-days 0
+mark-as-read-on-hover yes
+max-download-speed 0
+max-items 0
+#newsblur*
+notify-always no
+notify-beep no
+notify-format "%d new articles (%n unread articles, %f unread feeds)"
+#notify-program
+notify-screen no
+notify-xterm no
+#ocnews*
+#oldreader*
+openbrowser-and-mark-jumps-to-next-unread no
+#opml-url
+pager internal
+podcast-auto-enqueue no
+prepopulate-query-feeds no
+ssl-verifyhost yes
+ssl-verifypeer no
+#proxy*
+refresh-on-startup no
+reload-only-visible-feeds no
+reload-threads 3
+reload-time 60
+#reset-unread-on-update
+save-path "/home/files/tmp/downloads"
+search-highlight-colors red black bold
+show-keymap-hint yes
+show-read-articles yes
+show-read-feeds yes
+suppress-first-reload no
+swap-title-and-hints no
+text-width 80
+toggleitemread-jumps-to-next-unread no
+#ttrss*
+urls-source "local"
+use-proxy no
+#user-agent
+
+#include "~/.newsbeuter/colors"
+#define-filter
+#ignore-article
+
+bind-key j down all
+bind-key k up all
+
+#unbind-key
+
+macro o open-in-browser ; toggle-article-read "read"
+
+## PODBEUTER
+download-path "/home/files/tmp/downloads/podcasts/%h/%n"
+#download-filename-format
+max-downloads 3
+player "daemonize x-audio-player"
+#podlist-format
+
+highlight article "^(Title):.*$" blue default
+highlight article "https?://[^ ]+" red default
+highlight article "\\[image\\ [0-9]+\\]" green default
+
+#highlight-article
+
+color article default default
+color background default default
+color info default black reverse
+color listfocus black green
+color listfocus_unread black green
+color listnormal default default
+color listnormal_unread default default
+
+articlelist-title-format "Feed: %T (%u unread, %t total) %U"
+dialogs-title-format "Dialogs"
+feedlist-title-format "Feeds: %u unread, %t total %?T? - tag ‘%T’&?"
+filebrowser-title-format "%?O?Open File&Save File? - %f"
+help-title-format "Help"
+itemview-title-format "Article: %T"
+searchresult-title-format "Search result (%u unread, %t total)"
+selectfilter-title-format "Select Filter"
+selecttag-title-format "Select Tag"
+urlview-title-format "URLs"
