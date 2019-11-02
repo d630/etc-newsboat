@@ -19,7 +19,7 @@ download-retries 2
 download-timeout 30
 error-log "~/var/log/newsboat_error.log"
 #external-url-viewer
-feed-sort-order none
+feed-sort-order firsttag
 #feedhq*
 feedlist-format "%S %n %4i %11u %T %t"
 goto-first-unread no
