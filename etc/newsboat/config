@@ -4,7 +4,7 @@ article-sort-order date-asc
 articlelist-format "%f %4i %D  %L  %?T?|%-17T|  ?%t"
 auto-reload no
 bookmark-autopilot no
-bookmark-cmd "~/bin/taskum--add"
+bookmark-cmd "~/bin/taskum-add"
 bookmark-interactive no
 browser "daemonize x-web-browser %u"
 cache-file "~/etc/newsboat/newsboat_cache.db"
